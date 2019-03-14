@@ -12,7 +12,7 @@
 	request.contentType = "application/json";
 	request.setHeader = ("Authorization", auth);
 	request.method = "PUT";
-	request.postData = '{
+	request.postData = {
  		“user”:{
 			“external_id”	: “%%=V(@SubscriberKey)=%%“,
 			“email”			: “%%=V(@SubscriberEmail)=%%“,
@@ -20,7 +20,7 @@
 			“dob”			: “%%=V(@DOB)=%%“,
 			“zip”			: “%%=V(@ZipCode)=%%“,
   		}
-	}';
+	};
 	var response = request.send();
 	
 	Platform.Response.Write("Content:<br/>" + response.content);
