@@ -15,10 +15,10 @@
 	request.postData 		= {
  		“user”:{
 			“external_id”	: “%%=V(@SubscriberKey)=%%“,
-			“email”			: “%%=V(@SubscriberEmail)=%%“,
-			“gender”		: “%%=V(@Gender)=%%“,
-			“dob”			: “%%=V(@DOB)=%%“,
-			“zip”			: “%%=V(@ZipCode)=%%“,
+			“email”		: “%%=V(@SubscriberEmail)=%%“,
+			“gender”	: “%%=V(@Gender)=%%“,
+			“dob”		: “%%=V(@DOB)=%%“,
+			“zip”		: “%%=V(@ZipCode)=%%“,
   		}
 	};
 
