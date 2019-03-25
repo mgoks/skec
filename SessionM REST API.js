@@ -4,7 +4,7 @@
 	
 	var key				= "INSERT_API_KEY_HERE";
 	var secret			= "INSERT_API_SECRET_HERE";
-	var externalId			= "%%=V(@SubscriberKey)=%%";
+	var externalId		= "%%=V(@SubscriberKey)=%%";
 
 	var url 			= "https://api-skechers-usa.stg-sessionm.com/priv/v1/apps/" + key + "/external/users/" + externalId;
 	var request 			= new Script.Util.HttpRequest(url);
